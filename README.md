@@ -45,6 +45,7 @@ How to use
 Suppose that you have a problem into the problems folder:
 
 <pre>
+G8Simplex *simplex = [G8Simplex new];
 NSBundle *bundle = [NSBundle mainBundle];
 NSString *problemPath = [bundle pathForResource:@"small" ofType:@"problem"];
 [simplex optimize:problemPath];
