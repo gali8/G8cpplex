@@ -28,9 +28,9 @@ vars 3
 
 [CONSTRAINTS]
 
-1 3 4 > 0
-0 0 1 < 1
-1 2 0 < 2
+1 3 4 &gt; 0
+0 0 1 &lt; 1
+1 2 0 &lt; 2
 
 [OBJECTIVE]
 
@@ -44,6 +44,10 @@ How to use
 
 Suppose that you have a problem into the problems folder:
 
+<pre>
+NSBundle *bundle = [NSBundle mainBundle];
+NSString *problemPath = [bundle pathForResource:@"small" ofType:@"problem"]; [simplex optimize:problemPath];
+</pre>
 
 
 If you are using G8cpplex in a static library, create a custom bundle for use problems files in your project.
