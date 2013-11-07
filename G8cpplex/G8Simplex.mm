@@ -33,37 +33,27 @@ namespace optimization
 
 @implementation G8Simplex
 
--(int)optimize:(NSString *)theProblem  //argc, char* argv[])
+-(void)optimize:(NSString *)theProblem  //argc, char* argv[])
 {
     _simplex = new optimization::Simplex("banana");
     
-    //optimization::Simplex::banana chiama qualcosa di statico
-    //_simplex::banana chiama qualcosa di non statico
-    
-    //_simplex::problem("Simplex Instance");
     NSLog(@"Simplex Instance");
     
     try {
-        //problem.load_problem( argv[1] );
         _simplex->load_problem([theProblem UTF8String]);
         
         // Solve
-        //problem.solve();
         _simplex->solve();
         
         std::cout << std::endl;
         
-        //if (problem.must_be_fixed()) {
         if (_simplex->must_be_fixed()) {
             std::cout << "Problem formulation is incorrect." << std::endl;
-            return 1;
+            return;
         }
-        
-        //if ( problem.has_solutions() ) {
-        //if ( !problem.is_unlimited() )
+
         if ( _simplex->has_solutions() ) {
             if ( !_simplex->is_unlimited() )
-            //problem.print_solution();
             _simplex->print_solution();
             else
             std::cout << "Problem is unlimited." << std::endl;
@@ -73,12 +63,11 @@ namespace optimization
         }
         
     }
-    //catch ( DataMismatchException c ) {
     catch (optimization::DataMismatchException c ) {
         std::cout << "Error: " << c.error << std::endl;
     }
     
-    return 0;
+    return;
     
 	std::cout << "Quitting ..." << std::endl;
 }

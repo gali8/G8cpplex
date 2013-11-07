@@ -10,6 +10,6 @@
 
 @interface G8Simplex : NSObject
 
--(int)optimize:(NSString *)theProblem;
+-(void)optimize:(NSString *)theProblem;
 
 @end
