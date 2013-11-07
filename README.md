@@ -46,7 +46,8 @@ Suppose that you have a problem into the problems folder:
 
 <pre>
 NSBundle *bundle = [NSBundle mainBundle];
-NSString *problemPath = [bundle pathForResource:@"small" ofType:@"problem"]; [simplex optimize:problemPath];
+NSString *problemPath = [bundle pathForResource:@"small" ofType:@"problem"];
+[simplex optimize:problemPath];
 </pre>
 
 
