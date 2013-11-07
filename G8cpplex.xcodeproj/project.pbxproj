@@ -27,8 +27,8 @@
 		64CF5ED0182C3421009FF14D /* small.problem in Resources */ = {isa = PBXBuildFile; fileRef = 64CF5ECC182C3421009FF14D /* small.problem */; };
 		64CF5ED1182C3421009FF14D /* template.problem in Resources */ = {isa = PBXBuildFile; fileRef = 64CF5ECD182C3421009FF14D /* template.problem */; };
 		64CF5ED2182C3421009FF14D /* test.problem in Resources */ = {isa = PBXBuildFile; fileRef = 64CF5ECE182C3421009FF14D /* test.problem */; };
-		64D67433182C43D300F6D827 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 64D67431182C43D300F6D827 /* LICENSE */; };
-		64D67434182C43D300F6D827 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 64D67432182C43D300F6D827 /* README.md */; };
+		64D67437182C482B00F6D827 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 64D67435182C482B00F6D827 /* LICENSE */; };
+		64D67438182C482B00F6D827 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 64D67436182C482B00F6D827 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,8 +76,8 @@
 		64CF5ECC182C3421009FF14D /* small.problem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = small.problem; sourceTree = "<group>"; };
 		64CF5ECD182C3421009FF14D /* template.problem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = template.problem; sourceTree = "<group>"; };
 		64CF5ECE182C3421009FF14D /* test.problem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.problem; sourceTree = "<group>"; };
-		64D67431182C43D300F6D827 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		64D67432182C43D300F6D827 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		64D67435182C482B00F6D827 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		64D67436182C482B00F6D827 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,8 +125,8 @@
 		64CF5E75182C2A18009FF14D /* G8cpplex */ = {
 			isa = PBXGroup;
 			children = (
-				64D67431182C43D300F6D827 /* LICENSE */,
-				64D67432182C43D300F6D827 /* README.md */,
+				64D67435182C482B00F6D827 /* LICENSE */,
+				64D67436182C482B00F6D827 /* README.md */,
 				64CF5ECA182C3421009FF14D /* problems */,
 				64CF5EA5182C2AAF009FF14D /* lib */,
 				64CF5E7E182C2A18009FF14D /* AppDelegate.h */,
@@ -248,11 +248,11 @@
 			files = (
 				64CF5ED0182C3421009FF14D /* small.problem in Resources */,
 				64CF5ED2182C3421009FF14D /* test.problem in Resources */,
-				64D67433182C43D300F6D827 /* LICENSE in Resources */,
+				64D67437182C482B00F6D827 /* LICENSE in Resources */,
 				64CF5E88182C2A18009FF14D /* Images.xcassets in Resources */,
 				64CF5ECF182C3421009FF14D /* minimize.problem in Resources */,
 				64CF5E7A182C2A18009FF14D /* InfoPlist.strings in Resources */,
-				64D67434182C43D300F6D827 /* README.md in Resources */,
+				64D67438182C482B00F6D827 /* README.md in Resources */,
 				64CF5E83182C2A18009FF14D /* Main.storyboard in Resources */,
 				64CF5ED1182C3421009FF14D /* template.problem in Resources */,
 			);
