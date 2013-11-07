@@ -3,7 +3,7 @@ G8cpplex 1.0
 *This is the first version. With next release (i hope) i will change the problems input and output structure for a much easy implementation.
 *
 
-G8cpplex is a Objective-C wrapper for ccplex.
+**G8cpplex** is a **iOS** wrapper for **ccplex**.
 
 **G8Simplex** is the wrapper class between Objective-C and ccplex. Use it!
 
