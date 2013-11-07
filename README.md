@@ -1,6 +1,6 @@
 G8cpplex 1.0
 ========
-*This is the first version. With next release (maybe) i will change the problems input and output structure for a much easy implementation.
+*This is the first version. With next release (i hope) i will change the problems input and output structure for a much easy implementation.
 *
 
 G8cpplex is a Objective-C wrapper for ccplex.
@@ -37,7 +37,7 @@ vars 3
 maximize 1 3 1
 </pre>
 
-With next release (maybe) i will change the problems input and output structure for a much easy implementation.
+With next release (i hope) i will change the problems input and output structure for a much easy implementation.
 
 How to use
 ========
@@ -48,6 +48,7 @@ Suppose that you have a problem into the problems folder:
 NSBundle *bundle = [NSBundle mainBundle];
 NSString *problemPath = [bundle pathForResource:@"small" ofType:@"problem"]; [simplex optimize:problemPath];
 </pre>
+
 
 If you are using G8cpplex in a static library, create a custom bundle for use problems files in your project.
 
