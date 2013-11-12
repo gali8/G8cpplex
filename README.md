@@ -76,6 +76,8 @@ NSLog(@"Optimal:\n%@\n\nValue/Cost:\n%@\n\nDoubleValue:\n%@\n", simplexResult.so
 2) ***PROGRAMMATICALLY***
 
 <pre>
+G8Simplex *simplex = [G8Simplex new];
+    
 //VARIABLES
 NSMutableArray *variables = [NSMutableArray new];
 [variables addObject:[G8Variable variableWithLeft:@"0" name:@"x1" right:@"inf"]];

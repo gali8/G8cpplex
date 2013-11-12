@@ -32,7 +32,38 @@
 		64D67438182C482B00F6D827 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 64D67436182C482B00F6D827 /* README.md */; };
 		64DA04D518322383002FBEE2 /* toy.problem in Resources */ = {isa = PBXBuildFile; fileRef = 64DA04D418322383002FBEE2 /* toy.problem */; };
 		64DA04D718323138002FBEE2 /* toy2.problem in Resources */ = {isa = PBXBuildFile; fileRef = 64DA04D618323138002FBEE2 /* toy2.problem */; };
+		64DA04DD18327586002FBEE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64CF5E6F182C2A18009FF14D /* Foundation.framework */; };
+		64DA0504183275C3002FBEE2 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64DA0503183275C3002FBEE2 /* CoreFoundation.framework */; };
+		64DA050A183275C3002FBEE2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 64DA0508183275C3002FBEE2 /* InfoPlist.strings */; };
+		64DA050F1832760F002FBEE2 /* easy.problem in Resources */ = {isa = PBXBuildFile; fileRef = 64BDCCDA182CE44900B7C452 /* easy.problem */; };
+		64DA051018327611002FBEE2 /* minimize.problem in Resources */ = {isa = PBXBuildFile; fileRef = 64CF5ECB182C3421009FF14D /* minimize.problem */; };
+		64DA051118327613002FBEE2 /* small.problem in Resources */ = {isa = PBXBuildFile; fileRef = 64CF5ECC182C3421009FF14D /* small.problem */; };
+		64DA051218327615002FBEE2 /* template.problem in Resources */ = {isa = PBXBuildFile; fileRef = 64CF5ECD182C3421009FF14D /* template.problem */; };
+		64FECE801832765900E005EE /* test.problem in Resources */ = {isa = PBXBuildFile; fileRef = 64CF5ECE182C3421009FF14D /* test.problem */; };
+		64FECE811832765B00E005EE /* toy.problem in Resources */ = {isa = PBXBuildFile; fileRef = 64DA04D418322383002FBEE2 /* toy.problem */; };
+		64FECE821832765D00E005EE /* toy2.problem in Resources */ = {isa = PBXBuildFile; fileRef = 64DA04D618323138002FBEE2 /* toy2.problem */; };
+		64FECE85183276EC00E005EE /* G8Simplex.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 64CF5EC6182C2BB7009FF14D /* G8Simplex.h */; };
+		64FECE9C183279E100E005EE /* G8Simplex.mm in Sources */ = {isa = PBXBuildFile; fileRef = 64CF5EC7182C2BB7009FF14D /* G8Simplex.mm */; };
+		64FECEA118327C4800E005EE /* columnset.cc in Sources */ = {isa = PBXBuildFile; fileRef = 64CF5EA6182C2AAF009FF14D /* columnset.cc */; };
+		64FECEA218327C5400E005EE /* constraint.cc in Sources */ = {isa = PBXBuildFile; fileRef = 64CF5EA8182C2AAF009FF14D /* constraint.cc */; };
+		64FECEA318327C5400E005EE /* matrix.cc in Sources */ = {isa = PBXBuildFile; fileRef = 64CF5EAD182C2AAF009FF14D /* matrix.cc */; };
+		64FECEA418327C5400E005EE /* objectivefunction.cc in Sources */ = {isa = PBXBuildFile; fileRef = 64CF5EB3182C2AAF009FF14D /* objectivefunction.cc */; };
+		64FECEA518327C5400E005EE /* simplex.cc in Sources */ = {isa = PBXBuildFile; fileRef = 64CF5EB7182C2AAF009FF14D /* simplex.cc */; };
+		64FECEA618327C5400E005EE /* variable.cc in Sources */ = {isa = PBXBuildFile; fileRef = 64CF5EBC182C2AAF009FF14D /* variable.cc */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		64DA04DA18327586002FBEE2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				64FECE85183276EC00E005EE /* G8Simplex.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		64BDCCDA182CE44900B7C452 /* easy.problem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = easy.problem; sourceTree = "<group>"; };
@@ -84,6 +115,13 @@
 		64D67436182C482B00F6D827 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 		64DA04D418322383002FBEE2 /* toy.problem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = toy.problem; sourceTree = "<group>"; };
 		64DA04D618323138002FBEE2 /* toy2.problem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = toy2.problem; sourceTree = "<group>"; };
+		64DA04DC18327586002FBEE2 /* libG8cpplexLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libG8cpplexLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		64DA04E018327586002FBEE2 /* G8cpplexLibrary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "G8cpplexLibrary-Prefix.pch"; sourceTree = "<group>"; };
+		64DA0502183275C3002FBEE2 /* G8cpplexBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = G8cpplexBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		64DA0503183275C3002FBEE2 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		64DA0507183275C3002FBEE2 /* G8cpplexBundle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "G8cpplexBundle-Info.plist"; sourceTree = "<group>"; };
+		64DA0509183275C3002FBEE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		64DA050B183275C3002FBEE2 /* G8cpplexBundle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "G8cpplexBundle-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +135,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		64DA04D918327586002FBEE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64DA04DD18327586002FBEE2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64DA04FF183275C3002FBEE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64DA0504183275C3002FBEE2 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -104,6 +158,8 @@
 			isa = PBXGroup;
 			children = (
 				64CF5E75182C2A18009FF14D /* G8cpplex */,
+				64DA04DE18327586002FBEE2 /* G8cpplexLibrary */,
+				64DA0505183275C3002FBEE2 /* G8cpplexBundle */,
 				64CF5E6E182C2A18009FF14D /* Frameworks */,
 				64CF5E6D182C2A18009FF14D /* Products */,
 			);
@@ -113,6 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				64CF5E6C182C2A18009FF14D /* G8cpplex.app */,
+				64DA04DC18327586002FBEE2 /* libG8cpplexLibrary.a */,
+				64DA0502183275C3002FBEE2 /* G8cpplexBundle.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,6 +182,7 @@
 				64CF5E71182C2A18009FF14D /* CoreGraphics.framework */,
 				64CF5E73182C2A18009FF14D /* UIKit.framework */,
 				64CF5E8E182C2A18009FF14D /* XCTest.framework */,
+				64DA0503183275C3002FBEE2 /* CoreFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -203,6 +262,40 @@
 			path = problems;
 			sourceTree = "<group>";
 		};
+		64DA04DE18327586002FBEE2 /* G8cpplexLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				64DA04DF18327586002FBEE2 /* Supporting Files */,
+			);
+			path = G8cpplexLibrary;
+			sourceTree = "<group>";
+		};
+		64DA04DF18327586002FBEE2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				64DA04E018327586002FBEE2 /* G8cpplexLibrary-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		64DA0505183275C3002FBEE2 /* G8cpplexBundle */ = {
+			isa = PBXGroup;
+			children = (
+				64DA0506183275C3002FBEE2 /* Supporting Files */,
+			);
+			path = G8cpplexBundle;
+			sourceTree = "<group>";
+		};
+		64DA0506183275C3002FBEE2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				64DA0507183275C3002FBEE2 /* G8cpplexBundle-Info.plist */,
+				64DA0508183275C3002FBEE2 /* InfoPlist.strings */,
+				64DA050B183275C3002FBEE2 /* G8cpplexBundle-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -222,6 +315,40 @@
 			productName = G8cpplex;
 			productReference = 64CF5E6C182C2A18009FF14D /* G8cpplex.app */;
 			productType = "com.apple.product-type.application";
+		};
+		64DA04DB18327586002FBEE2 /* G8cpplexLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64DA04F818327586002FBEE2 /* Build configuration list for PBXNativeTarget "G8cpplexLibrary" */;
+			buildPhases = (
+				64DA04D818327586002FBEE2 /* Sources */,
+				64DA04D918327586002FBEE2 /* Frameworks */,
+				64DA04DA18327586002FBEE2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = G8cpplexLibrary;
+			productName = G8cpplexLibrary;
+			productReference = 64DA04DC18327586002FBEE2 /* libG8cpplexLibrary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		64DA0501183275C3002FBEE2 /* G8cpplexBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64DA050C183275C3002FBEE2 /* Build configuration list for PBXNativeTarget "G8cpplexBundle" */;
+			buildPhases = (
+				64DA04FE183275C3002FBEE2 /* Sources */,
+				64DA04FF183275C3002FBEE2 /* Frameworks */,
+				64DA0500183275C3002FBEE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = G8cpplexBundle;
+			productName = G8cpplexBundle;
+			productReference = 64DA0502183275C3002FBEE2 /* G8cpplexBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -246,6 +373,8 @@
 			projectRoot = "";
 			targets = (
 				64CF5E6B182C2A18009FF14D /* G8cpplex */,
+				64DA04DB18327586002FBEE2 /* G8cpplexLibrary */,
+				64DA0501183275C3002FBEE2 /* G8cpplexBundle */,
 			);
 		};
 /* End PBXProject section */
@@ -270,6 +399,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		64DA0500183275C3002FBEE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64DA050A183275C3002FBEE2 /* InfoPlist.strings in Resources */,
+				64DA050F1832760F002FBEE2 /* easy.problem in Resources */,
+				64DA051018327611002FBEE2 /* minimize.problem in Resources */,
+				64DA051118327613002FBEE2 /* small.problem in Resources */,
+				64DA051218327615002FBEE2 /* template.problem in Resources */,
+				64FECE801832765900E005EE /* test.problem in Resources */,
+				64FECE811832765B00E005EE /* toy.problem in Resources */,
+				64FECE821832765D00E005EE /* toy2.problem in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -290,6 +434,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		64DA04D818327586002FBEE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64FECEA618327C5400E005EE /* variable.cc in Sources */,
+				64FECEA218327C5400E005EE /* constraint.cc in Sources */,
+				64FECEA118327C4800E005EE /* columnset.cc in Sources */,
+				64FECEA318327C5400E005EE /* matrix.cc in Sources */,
+				64FECE9C183279E100E005EE /* G8Simplex.mm in Sources */,
+				64FECEA518327C5400E005EE /* simplex.cc in Sources */,
+				64FECEA418327C5400E005EE /* objectivefunction.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64DA04FE183275C3002FBEE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -307,6 +472,14 @@
 				64CF5E82182C2A18009FF14D /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		64DA0508183275C3002FBEE2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64DA0509183275C3002FBEE2 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -410,6 +583,73 @@
 			};
 			name = Release;
 		};
+		64DA04F918327586002FBEE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DSTROOT = /tmp/G8cpplexLibrary.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "G8cpplexLibrary/G8cpplexLibrary-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		64DA04FA18327586002FBEE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DSTROOT = /tmp/G8cpplexLibrary.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "G8cpplexLibrary/G8cpplexLibrary-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		64DA050D183275C3002FBEE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "G8cpplexBundle/G8cpplexBundle-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "G8cpplexBundle/G8cpplexBundle-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		64DA050E183275C3002FBEE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "G8cpplexBundle/G8cpplexBundle-Prefix.pch";
+				INFOPLIST_FILE = "G8cpplexBundle/G8cpplexBundle-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -427,6 +667,24 @@
 			buildConfigurations = (
 				64CF5E9F182C2A18009FF14D /* Debug */,
 				64CF5EA0182C2A18009FF14D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64DA04F818327586002FBEE2 /* Build configuration list for PBXNativeTarget "G8cpplexLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64DA04F918327586002FBEE2 /* Debug */,
+				64DA04FA18327586002FBEE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64DA050C183275C3002FBEE2 /* Build configuration list for PBXNativeTarget "G8cpplexBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64DA050D183275C3002FBEE2 /* Debug */,
+				64DA050E183275C3002FBEE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -16,7 +16,6 @@
     
     G8Simplex *simplex = [G8Simplex new];
     
-    
     NSBundle *bundle = [NSBundle mainBundle];
     
     /* print the problem */
