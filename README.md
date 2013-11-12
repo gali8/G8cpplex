@@ -1,4 +1,4 @@
-G8cpplex 1.1
+G8cpplex 1.2
 ========
 **G8cpplex** is a **iOS** wrapper for **ccplex**.
 
@@ -38,6 +38,8 @@ With next release (i hope) i will change the problems input and output structure
 
 What's new?
 ========
+- Static Library added
+- Bundle added
 
 - Solving a problem **programmatically** without use a .problem file, using the new classes G8Variable, G8Constraint...
 
