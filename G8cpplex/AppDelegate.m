@@ -20,16 +20,42 @@
     NSBundle *bundle = [NSBundle mainBundle];
     
     /* print the problem */
-    NSURL *problemUrl = [bundle URLForResource:@"small" withExtension:@"problem"];
+    NSURL *problemUrl = [bundle URLForResource:@"toy" withExtension:@"problem"];
     NSError *error = nil;
     NSString *problem = [NSString stringWithContentsOfURL:problemUrl encoding:NSUTF8StringEncoding error:&error];
     NSLog(@"This is the problem: \n\r%@", problem);
     /* end print the problem */
     
     
-    /*simplex: solving the problem */
-    NSString *problemPath = [bundle pathForResource:@"small" ofType:@"problem"];
-    [simplex optimize:problemPath];
+    /*simplex: solving the problem  from .problem FILE*/
+    NSString *problemPath = [bundle pathForResource:@"toy" ofType:@"problem"];
+    G8SimplexResult *simplexResult = [simplex optimize:problemPath];
+    
+    NSLog(@"Optimal:\n%@\n\nValue/Cost:\n%@\n\nDoubleValue:\n%@\n", simplexResult.solutionOptimal, simplexResult.solutionValueCost, simplexResult.solutionDualProblemValue);
+    
+    
+    
+ /*simplex: solving the problem  PROGRAMMATICALLY*/
+    
+    //VARIABLES
+    NSMutableArray *variables = [NSMutableArray new];
+    [variables addObject:[G8Variable variableWithLeft:@"0" name:@"x1" right:@"inf"]];
+    [variables addObject:[G8Variable variableWithLeft:@"0" name:@"x2" right:@"inf"]];
+    [variables addObject:[G8Variable variableWithLeft:@"0" name:@"x3" right:@"inf"]];
+    [variables addObject:[G8Variable variableWithLeft:@"0" name:@"x4" right:@"inf"]];
+    
+    //CONSTRAINTS
+    NSMutableArray *constraints = [NSMutableArray new];
+    [constraints addObject:[G8Constraint constraintWithLeft:@[@"1.2", @"6", @"70", @"2.5"] relation:LEQ right:@"10000"]];
+    [constraints addObject:[G8Constraint constraintWithLeft:@[@"1", @"1", @"0", @"0"] relation:EQ right:@"1"]];
+    [constraints addObject:[G8Constraint constraintWithLeft:@[@"0", @"0", @"1", @"1"] relation:EQ right:@"1"]];
+    
+    //OBJECTIVE
+    NSArray *objective = @[@"1.2", @"6", @"70", @"2.5"];
+    
+    G8SimplexResult *simplexProgrammaticallyResult = [simplex optimize:variables constaints:constraints goalType:MINIMIZE objective:objective];
+    
+    NSLog(@"Optimal:\n%@\n\nValue/Cost:\n%@\n\nDoubleValue:\n%@\n", simplexProgrammaticallyResult.solutionOptimal, simplexProgrammaticallyResult.solutionValueCost, simplexProgrammaticallyResult.solutionDualProblemValue);
     
     // Override point for customization after application launch.
     return YES;

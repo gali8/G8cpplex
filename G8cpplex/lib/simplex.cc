@@ -707,14 +707,26 @@ namespace optimization {
         }
     }
     
-    void Simplex::print_solution() const {
+    std::vector<double> Simplex::print_solution() const {
+        
+        //double* result = new double[solution_dimension + 2];
+        
+        std::vector<double> result;
         
         std::cout << "Optimal solution is:" << std::endl;
         for (int i = 0; i < solution_dimension; ++i)
+        {
             std::cout << variables.at(i)->name << ":\t\t\t" << solution(i) << std::endl;
+            
+            //optimal solution
+            result.push_back(solution(i));
+        }
         
         std::cout << std::endl;
         std::cout << "Solution value/cost:\t\t" << solution_value << std::endl;
+        
+        //solution value/cost
+        result.push_back(solution_value);
         
         long double dual_problem_value = (dual_variables * constraints_vector);
         if (changed_sign)
@@ -722,7 +734,10 @@ namespace optimization {
         
         std::cout << "Dual problem value:\t\t" << dual_problem_value << std::endl;
         
-        return;
+        //dual problem value
+        result.push_back(dual_problem_value);
+        
+        return result;
     }
     
     void Simplex::solve() {

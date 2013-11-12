@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64BDCCDB182CE44900B7C452 /* easy.problem in Resources */ = {isa = PBXBuildFile; fileRef = 64BDCCDA182CE44900B7C452 /* easy.problem */; };
 		64CF5E70182C2A18009FF14D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64CF5E6F182C2A18009FF14D /* Foundation.framework */; };
 		64CF5E72182C2A18009FF14D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64CF5E71182C2A18009FF14D /* CoreGraphics.framework */; };
 		64CF5E74182C2A18009FF14D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64CF5E73182C2A18009FF14D /* UIKit.framework */; };
@@ -29,9 +30,12 @@
 		64CF5ED2182C3421009FF14D /* test.problem in Resources */ = {isa = PBXBuildFile; fileRef = 64CF5ECE182C3421009FF14D /* test.problem */; };
 		64D67437182C482B00F6D827 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 64D67435182C482B00F6D827 /* LICENSE */; };
 		64D67438182C482B00F6D827 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 64D67436182C482B00F6D827 /* README.md */; };
+		64DA04D518322383002FBEE2 /* toy.problem in Resources */ = {isa = PBXBuildFile; fileRef = 64DA04D418322383002FBEE2 /* toy.problem */; };
+		64DA04D718323138002FBEE2 /* toy2.problem in Resources */ = {isa = PBXBuildFile; fileRef = 64DA04D618323138002FBEE2 /* toy2.problem */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		64BDCCDA182CE44900B7C452 /* easy.problem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = easy.problem; sourceTree = "<group>"; };
 		64CF5E6C182C2A18009FF14D /* G8cpplex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = G8cpplex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64CF5E6F182C2A18009FF14D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		64CF5E71182C2A18009FF14D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -78,6 +82,8 @@
 		64CF5ECE182C3421009FF14D /* test.problem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.problem; sourceTree = "<group>"; };
 		64D67435182C482B00F6D827 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		64D67436182C482B00F6D827 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
+		64DA04D418322383002FBEE2 /* toy.problem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = toy.problem; sourceTree = "<group>"; };
+		64DA04D618323138002FBEE2 /* toy2.problem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = toy2.problem; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,10 +192,13 @@
 		64CF5ECA182C3421009FF14D /* problems */ = {
 			isa = PBXGroup;
 			children = (
+				64BDCCDA182CE44900B7C452 /* easy.problem */,
 				64CF5ECB182C3421009FF14D /* minimize.problem */,
 				64CF5ECC182C3421009FF14D /* small.problem */,
 				64CF5ECD182C3421009FF14D /* template.problem */,
 				64CF5ECE182C3421009FF14D /* test.problem */,
+				64DA04D418322383002FBEE2 /* toy.problem */,
+				64DA04D618323138002FBEE2 /* toy2.problem */,
 			);
 			path = problems;
 			sourceTree = "<group>";
@@ -247,12 +256,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				64CF5ED0182C3421009FF14D /* small.problem in Resources */,
+				64BDCCDB182CE44900B7C452 /* easy.problem in Resources */,
+				64DA04D518322383002FBEE2 /* toy.problem in Resources */,
 				64CF5ED2182C3421009FF14D /* test.problem in Resources */,
 				64D67437182C482B00F6D827 /* LICENSE in Resources */,
 				64CF5E88182C2A18009FF14D /* Images.xcassets in Resources */,
 				64CF5ECF182C3421009FF14D /* minimize.problem in Resources */,
 				64CF5E7A182C2A18009FF14D /* InfoPlist.strings in Resources */,
 				64D67438182C482B00F6D827 /* README.md in Resources */,
+				64DA04D718323138002FBEE2 /* toy2.problem in Resources */,
 				64CF5E83182C2A18009FF14D /* Main.storyboard in Resources */,
 				64CF5ED1182C3421009FF14D /* template.problem in Resources */,
 			);

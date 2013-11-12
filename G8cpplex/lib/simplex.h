@@ -70,7 +70,7 @@ namespace optimization {
             void solve();          
 
             // Print
-            void print_solution() const;
+            std::vector<double> print_solution() const; //print the solution and return a array of double where the n-2 value is the solution value/cost and the n-1 is the dual problem value.
             void log() const; 
             
             bool is_unlimited() const;

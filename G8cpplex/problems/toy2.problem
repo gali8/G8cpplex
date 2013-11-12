@@ -1,0 +1,27 @@
+[METADATA]
+
+name Easy4
+vars 8
+
+[VARIABLES]
+
+0   x1  inf
+0   x2  inf
+0   x3  inf
+0   x4  inf
+0   x5  inf
+0   x6  inf
+0   x7  inf
+0   x8  inf
+
+[CONSTRAINTS]
+
+1.2 6 70 2.5 7 11 4 2.3 < 10000
+1 1 0 0 0 0 0 0 = 1
+0 0 1 1 0 0 0 0 = 1
+0 0 0 0 1 1 0 0 = 1
+0 0 0 0 0 0 1 1 = 1
+
+[OBJECTIVE]
+
+minimize 1.2 6 70 2.5 7 11 4 2.3
