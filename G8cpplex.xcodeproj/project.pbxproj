@@ -81,7 +81,6 @@
 		64CF5E84182C2A18009FF14D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		64CF5E85182C2A18009FF14D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		64CF5E87182C2A18009FF14D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		64CF5E8E182C2A18009FF14D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		64CF5EA6182C2AAF009FF14D /* columnset.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = columnset.cc; sourceTree = "<group>"; };
 		64CF5EA7182C2AAF009FF14D /* columnset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = columnset.h; sourceTree = "<group>"; };
 		64CF5EA8182C2AAF009FF14D /* constraint.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = constraint.cc; sourceTree = "<group>"; };
@@ -181,7 +180,6 @@
 				64CF5E6F182C2A18009FF14D /* Foundation.framework */,
 				64CF5E71182C2A18009FF14D /* CoreGraphics.framework */,
 				64CF5E73182C2A18009FF14D /* UIKit.framework */,
-				64CF5E8E182C2A18009FF14D /* XCTest.framework */,
 				64DA0503183275C3002FBEE2 /* CoreFoundation.framework */,
 			);
 			name = Frameworks;
@@ -588,7 +586,8 @@
 		64DA04F918327586002FBEE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				DSTROOT = /tmp/G8cpplexLibrary.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "G8cpplexLibrary/G8cpplexLibrary-Prefix.pch";
@@ -596,6 +595,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -605,10 +605,12 @@
 		64DA04FA18327586002FBEE2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				DSTROOT = /tmp/G8cpplexLibrary.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "G8cpplexLibrary/G8cpplexLibrary-Prefix.pch";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
